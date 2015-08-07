@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Autopkg recipe to add MS Office 2011 Updates with DisabledAllQuit to Absolute Manage</string>
 	<key>Identifier</key>
-	<string>com.github.patgmac.absolute.MSOffice2011Updates-DisabledAllQuit</string>
+	<string>com.github.patgmac.absolute.MSOffice2011UpdatesDisabledAllQuit</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.sheagcraig.pkg.MSOffice2011Updates-DisabledAllQuit</string>
+	<string>com.github.sheagcraig.pkg.MSOffice2011UpdatesDisabledAllQuit</string>
 	<key>Process</key>
 	<array>
 		<dict>
