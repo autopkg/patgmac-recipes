@@ -1,16 +1,16 @@
-AutoPKG receipes 
+AutoPKG recipes 
 
 Most/all of the Absolute Manage recipes depend on other recipes to operate. When troubleshooting, check the <key>ParentRecipe</key> and determine if that is still working. Bugs should be filed with the appropriate recipe maintainer. 
 
 Recipes and their parents:
-Adobe Acrobat Pro X - com.github.golbiga.pkg.AdobeAcrobatProXUpdate
-Adobe Reader DC - com.github.rtrouton.pkg.AdobeReaderDC
-Adobe Shockwave - com.github.jleggat.AdobeShockwavePlayer.pkg
-Audacity - com.github.scriptingosx.pkg.audacity
-Evernote - com.github.autopkg.pkg.Evernote
-MS Office 2011 - com.github.sheagcraig.pkg.Office2011UpdatesDisabledAllQuit
-R - com.github.golbiga.pkg.R
-RStudio - com.github.rtrouton.pkg.RStudio
+Adobe Acrobat Pro X - https://github.com/autopkg/golbiga-recipes
+Adobe Reader DC - https://github.com/autopkg/rtrouton-recipes
+Adobe Shockwave - https://github.com/autopkg/jleggat-recipes
+Audacity - https://github.com/autopkg/scriptingosx-recipes
+Evernote - https://github.com/autopkg/recipes
+MS Office 2011 - https://github.com/autopkg/sheagcraig-recipes
+R - https://github.com/autopkg/golbiga-recipes
+RStudio - https://github.com/autopkg/rtrouton-recipes
 
 For instructions on getting AutoPKG setup with Absolute Manage, see:
 https://github.com/tburgin/AbsoluteManageExport
