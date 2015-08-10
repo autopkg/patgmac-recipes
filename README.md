@@ -7,7 +7,8 @@ Recipes and their parents:
 -Adobe Acrobat Pro X - https://github.com/autopkg/golbiga-recipes  
 -Adobe Reader DC - https://github.com/autopkg/rtrouton-recipes  
 -Adobe Shockwave - https://github.com/autopkg/jleggat-recipes  
--Audacity - https://github.com/autopkg/scriptingosx-recipes  
+-Audacity - https://github.com/autopkg/scriptingosx-recipes 
+-Fitbit - https://github.com/autopkg/hansen-m-recipes 
 -Evernote - https://github.com/autopkg/recipes  
 -MS Office 2011 - https://github.com/autopkg/sheagcraig-recipes  
 -R - https://github.com/autopkg/golbiga-recipes  
@@ -15,5 +16,5 @@ Recipes and their parents:
 
 
 For instructions on getting AutoPKG setup with Absolute Manage, see:
-https://github.com/tburgin/AbsoluteManageExport
+https://github.com/tburgin/AbsoluteManageExport  
 http://forums.absolute.com/kb.php?a=1062
