@@ -24,7 +24,7 @@
 				<string>%pathname%/CrystalDiffract.app</string>
 				<key>plist_keys</key>
 				<dict>
-					<key>CFBundleVersion</key>
+					<key>CFBundleShortVersionString</key>
 					<string>version</string>
 				</dict>
 			</dict>
