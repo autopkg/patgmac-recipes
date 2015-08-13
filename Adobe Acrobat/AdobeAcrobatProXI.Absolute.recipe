@@ -3,13 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Autopkg recipe to add Adobe Acrobat X updates to Absolute Manage</string>
+	<string>Autopkg recipe to add Adobe Acrobat XI updates to Absolute Manage</string>
 	<key>Identifier</key>
-	<string>com.github.patgmac.absolute.AdobeAcrobatProXUpdate</string>
+	<string>com.github.patgmac.absolute.AdobeAcrobatProXIUpdate</string>
 	<key>Input</key>
 	<dict>
+		<key>MAJOR_VERSION</key>
+		<string>11</string>
 		<key>NAME</key>
-		<string>Adobe Acrobat X</string>
+		<string>AdobeAcrobatProXI_Update</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
