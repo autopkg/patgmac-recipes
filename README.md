@@ -1,6 +1,6 @@
 ## patgmac-recipes
 
-Recipes for (http://autopkg.github.io/autopkg/). If you find these useful, please star this repo so I know others are using them.
+Recipes for [AutoPkg](http://autopkg.github.io/autopkg/). If you find these useful, please star this repo so I know others are using them.
 
 ## Dependencies
 
@@ -15,9 +15,10 @@ autopkg repo-add jleggat-recipes
 autopkg repo-add scriptingosx-recipes
 autopkg repo-add sheagcraig-recipes
 autopkg repo-add rtrouton-recipes
+```
 
-
-For instructions on getting AutoPKG setup with Absolute Manage, see:
+For instructions on getting AutoPkg setup with Absolute Manage, see:
 ```
 https://github.com/tburgin/AbsoluteManageExport  
-http://forums.absolute.com/kb.php?a=1062
+http://forums.absolute.com/kb.php?a=1062  
+```
