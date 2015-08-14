@@ -8,7 +8,7 @@ Parent recipes:
 -Adobe Acrobat Pro X - https://github.com/autopkg/golbiga-recipes  
 -Adobe Reader DC - https://github.com/autopkg/rtrouton-recipes  
 -Adobe Shockwave - https://github.com/autopkg/jleggat-recipes  
--Audacity - https://github.com/autopkg/scriptingosx-recipes 
+-Audacity - https://github.com/autopkg/scriptingosx-recipes  
 -Fitbit - https://github.com/autopkg/hansen-m-recipes  
 -Audacity/XQuartz - https://github.com/autopkg/scriptingosx-recipes  
 -Evernote - https://github.com/autopkg/recipes  
