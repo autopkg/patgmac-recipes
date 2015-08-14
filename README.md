@@ -9,13 +9,13 @@ Parent recipes:
 -Adobe Reader DC - https://github.com/autopkg/rtrouton-recipes  
 -Adobe Shockwave - https://github.com/autopkg/jleggat-recipes  
 -Audacity - https://github.com/autopkg/scriptingosx-recipes 
--Fitbit - https://github.com/autopkg/hansen-m-recipes 
+-Fitbit - https://github.com/autopkg/hansen-m-recipes  
 -Audacity/XQuartz - https://github.com/autopkg/scriptingosx-recipes  
 -Evernote - https://github.com/autopkg/recipes  
 -MS Office 2011 - https://github.com/autopkg/sheagcraig-recipes  
 -R - https://github.com/autopkg/golbiga-recipes  
 -RStudio - https://github.com/autopkg/rtrouton-recipes  
--MS Office 2016 - https://github.com/autopkg/arubdesu-recipes  
+-MS Office 2016 - https://github.com/autopkg/recipes  
 
 
 For instructions on getting AutoPKG setup with Absolute Manage, see:
