@@ -9,25 +9,14 @@
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Fitbit</string>
+		<string>Fitbit Connect</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.hansen-m.download.Fitbit</string>
+	<string>com.github.patgmac.pkg.FitbitExtractor</string>
 	<key>Process</key>
 	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
-				<key>source_pkg</key>
-				<string>%pathname%/Install Fitbit Connect.pkg</string>
-			</dict>
-			<key>Processor</key>
-			<string>PkgCopier</string>
-		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
