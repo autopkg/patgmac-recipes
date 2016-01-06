@@ -20,13 +20,15 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>source</key>
-				<string>%pkg_path%</string>
-				<key>target</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/%NAME%-%version%.msi</string>
+				<key>destination_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.msi</string>
+				<key>overwrite</key>
+				<string>true</string>
+				<key>source_path</key>
+				<string>%pathname%</string>
 			</dict>
 			<key>Processor</key>
-			<string>FileMover</string>
+			<string>Copier</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
@@ -35,12 +37,18 @@
 				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.amsdpackages</string>
 				<key>import_abman_to_servercenter</key>
 				<true/>
+				<key>max_os</key>
+				<string>Win7</string>
+				<key>min_os</key>
+				<string>Win7</string>
 				<key>os_platform</key>
 				<string>Win</string>
+				<key>platform_arch</key>
+				<string>x86</string>
 				<key>sdpackages_ampkgprops_path</key>
 				<string>%RECIPE_DIR%/%NAME%-Defaults.ampkgprops</string>
 				<key>source_payload_path</key>
-				<string>%pathname%</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.msi</string>
 			</dict>
 			<key>Processor</key>
 			<string>AbsoluteManageExport</string>
