@@ -15,6 +15,7 @@ autopkg repo-add scriptingosx-recipes
 autopkg repo-add sheagcraig-recipes
 autopkg repo-add rtrouton-recipes
 autopkg repo-add justinrummel-recipes
+autopkg repo-add novaksam-recipes
 ```
 
 For instructions on getting AutoPkg setup with Absolute Manage, see:
