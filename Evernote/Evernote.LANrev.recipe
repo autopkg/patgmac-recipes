@@ -3,20 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Autopkg recipe to add Adobe Acrobat DC (classic track) updates to LANrev. Override MAJOR_VERSION to AcrobatDC if you want continuous track.</string>
+	<string>Autopkg recipe to add Evernote to LANrev</string>
 	<key>Identifier</key>
-	<string>com.github.patgmac.absolute.AdobeAcrobatProDCUpdate</string>
+	<string>com.github.patgmac.lanrev.Evernote</string>
 	<key>Input</key>
 	<dict>
-		<key>MAJOR_VERSION</key>
-		<string>Acrobat2015</string>
 		<key>NAME</key>
-		<string>AdobeAcrobatDC_Update</string>
+		<string>Evernote</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.novaksam.pkg.AdobeAcrobatDCUpdate</string>
+	<string>com.github.autopkg.pkg.Evernote</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -24,19 +22,17 @@
 			<dict>
 				<key>dest_payload_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.amsdpackages</string>
-				<key>import_abman_to_servercenter</key>
+				<key>import_pkg_to_servercenter</key>
 				<true/>
-				<key>os_platform</key>
-				<string>Win</string>
 				<key>sdpackages_ampkgprops_path</key>
 				<string>%RECIPE_DIR%/%NAME%-Defaults.ampkgprops</string>
 				<key>source_payload_path</key>
 				<string>%pkg_path%</string>
 			</dict>
 			<key>Processor</key>
-			<string>AbsoluteManageExport</string>
+			<string>com.github.jbaker10.LANrevImporter/LANrevImporter</string>
 			<key>SharedProcessorRepoURL</key>
-			<string>https://github.com/tburgin/AbsoluteManageExport</string>
+			<string>https://github.com/jbaker10/LANrevImporter</string>
 		</dict>
 	</array>
 </dict>
