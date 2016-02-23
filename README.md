@@ -1,5 +1,13 @@
 ## patgmac-recipes
 
+```
+ALERT: AbsoluteManageExporter has become LANrevImporter. As part of this move, recipes have been duplicated with the LANrev name/identifier. 
+Going forward, please use the LANrev recipes, not Absolute. 
+The Absolute recipes will be removed at some point!!
+
+See https://github.com/jbaker10/LANrevImporter/wiki/Switching-from-AbsoluteManageExport-to-LANrevImporter
+```
+
 Recipes for [AutoPkg](http://autopkg.github.io/autopkg/). If you find these useful, please star this repo so I know others are using them.
 
 ## Dependencies
@@ -19,10 +27,10 @@ autopkg repo-add novaksam-recipes
 autopkg repo-add grahamgilbert-recipes
 ```
 
-For instructions on getting AutoPkg setup with Absolute Manage, see:
+For instructions on getting AutoPkg setup with LANrev, see:
 ```
-https://github.com/tburgin/AbsoluteManageExport  
-http://forums.absolute.com/kb.php?a=1062  
+https://github.com/jbaker10/LANrevImporter  
+ 
 ```
 
 ## VMware Fusion Deploy:  
@@ -32,4 +40,4 @@ This recipe creates a mass deployment package of VMware Fusion. Idea for this wa
 You will need to create an override that specifies your volume license serial number and optionally a unique name (such as Company-VMwareFusionDeploy). 
 If needed, you could create a separate override if you have more than one VL.  
 
-I will make an Absolute recipe for this soon as well. 
+I will make a LANrev recipe for this soon as well. 
