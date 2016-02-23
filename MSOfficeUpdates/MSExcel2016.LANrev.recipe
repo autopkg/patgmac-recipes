@@ -3,37 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads latest Google Chrome x86 MSI for Windows and adds to LANrev</string>
+	<string>Autopkg recipe to add MS Excel 2016 updates to LANrev</string>
 	<key>Identifier</key>
-	<string>com.github.patgmac.absolute.GoogleChrome-Win</string>
+	<string>com.github.patgmac.lanrev.MSExcel2016</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>GoogleChrome</string>
+		<string>MSExcel2016</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.hansen-m.download.googlechrome-Win</string>
+	<string>com.github.autopkg.download.MSExcel2016</string>
 	<key>Process</key>
 	<array>
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>source</key>
-				<string>%pkg_path%</string>
-				<key>target</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/%NAME%-%version%.msi</string>
-			</dict>
-			<key>Processor</key>
-			<string>FileMover</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
 				<key>dest_payload_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.amsdpackages</string>
-				<key>import_abman_to_servercenter</key>
+				<key>import_pkg_to_servercenter</key>
 				<true/>
 				<key>sdpackages_ampkgprops_path</key>
 				<string>%RECIPE_DIR%/%NAME%-Defaults.ampkgprops</string>
@@ -41,9 +30,9 @@
 				<string>%pathname%</string>
 			</dict>
 			<key>Processor</key>
-			<string>com.github.tburgin.AbsoluteManageExport/AbsoluteManageExport</string>
+			<string>com.github.jbaker10.LANrevImporter/LANrevImporter</string>
 			<key>SharedProcessorRepoURL</key>
-			<string>https://github.com/tburgin/AbsoluteManageExport</string>
+			<string>https://github.com/jbaker10/LANrevImporter</string>
 		</dict>
 	</array>
 </dict>
