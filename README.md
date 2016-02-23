@@ -5,7 +5,7 @@ ALERT: AbsoluteManageExporter has become LANrevImporter. As part of this move, r
 Going forward, please use the LANrev recipes, not Absolute. 
 The Absolute recipes will be removed at some point!!
 
-See [Switching from AMExporter to LANrevImporter](https://github.com/jbaker10/LANrevImporter/wiki/Switching-from-AbsoluteManageExport-to-LANrevImporter)
+See https://github.com/jbaker10/LANrevImporter/wiki/Switching-from-AbsoluteManageExport-to-LANrevImporter
 ```
 
 Recipes for [AutoPkg](http://autopkg.github.io/autopkg/). If you find these useful, please star this repo so I know others are using them.
