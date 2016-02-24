@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Autopkg recipe to add MS Outlook 2016 updates to LANrev</string>
 	<key>Identifier</key>
-	<string>com.github.patgmac.absolute.MSOutlook2016</string>
+	<string>com.github.patgmac.lanrev.MSOutlook2016</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
