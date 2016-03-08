@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads latest Firefox for LANrev</string>
+	<key>Identifier</key>
+	<string>com.github.patgmac.lanrev.FirefoxAutoconfig</string>
+	<key>Input</key>
+	<dict>
+		<key>AUTOCONFIG_DIR</key>
+		<string>Contents/Resources/</string>
+		<key>AUTOCONFIG_FILENAME</key>
+		<string>autoconfig.zip</string>
+		<key>LOCALE</key>
+		<string>en_US</string>
+		<key>NAME</key>
+		<string>Firefox</string>
+		<key>ORG_NAME</key>
+		<string>Customized</string>
+		<key>PKG_ID</key>
+		<string>org.mozilla.firefox.pkg</string>
+		<key>RELEASE</key>
+		<string>latest</string>
+		<key>payload_name_prefix</key>
+		<string></string>
+		<key>sd_name_prefix</key>
+		<string></string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.4.0</string>
+	<key>ParentRecipe</key>
+	<string>com.github.gregneagle.pkg.FirefoxAutoconfig</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>dest_payload_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%_%ORG_NAME%-%version%.amsdpackages</string>
+				<key>import_pkg_to_servercenter</key>
+				<true/>
+				<key>sdpackages_ampkgprops_path</key>
+				<string>%RECIPE_DIR%/%NAME%-Defaults.ampkgprops</string>
+				<key>source_payload_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%_%ORG_NAME%-%version%.pkg</string>
+			</dict>
+			<key>Processor</key>
+			<string>LANrevImporter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
