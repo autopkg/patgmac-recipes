@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads latest Google Chrome x86 MSI for Windows and adds to LANrev</string>
 	<key>Identifier</key>
-	<string>com.github.patgmac.lanrev.GoogleChrome-Win</string>
+	<string>com.github.patgmac.lanrev.GoogleChrome-Win32</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
