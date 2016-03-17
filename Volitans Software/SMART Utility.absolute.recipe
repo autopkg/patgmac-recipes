@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Comment</key>
-	<string>Created with Recipe Robot v1.0.1 (https://github.com/homebysix/recipe-robot)</string>
+	<string>THIS RECIPE WILL BE REMOVED SOON! Please migrate to "LANrev" recipes.</string>
 	<key>Description</key>
 	<string>Downloads the latest version of SMART Utility and copies it into your Absolute Manage Server.</string>
 	<key>Identifier</key>

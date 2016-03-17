@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Autopkg recipe to add outset to LANrev</string>
+	<string>THIS RECIPE WILL BE REMOVED SOON! Please migrate to "LANrev" recipes.</string>
 	<key>Identifier</key>
 	<string>com.github.patgmac.absolute.outset</string>
 	<key>Input</key>

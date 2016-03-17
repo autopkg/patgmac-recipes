@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Autopkg recipe to add MS Office 2016 SKULess to LANrev</string>
+	<string>THIS RECIPE WILL BE REMOVED SOON! Please migrate to "LANrev" recipes.</string>
 	<key>Identifier</key>
 	<string>com.github.patgmac.absolute.MSOffice2016Suite</string>
 	<key>Input</key>

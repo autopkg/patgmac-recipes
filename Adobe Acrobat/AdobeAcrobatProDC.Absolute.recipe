@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Autopkg recipe to add Adobe Acrobat DC (classic track) updates to LANrev. Override MAJOR_VERSION to AcrobatDC if you want continuous track.</string>
+	<string>THIS RECIPE WILL BE REMOVED SOON! Please migrate to "LANrev" recipes.</string>
 	<key>Identifier</key>
 	<string>com.github.patgmac.absolute.AdobeAcrobatProDCUpdate</string>
 	<key>Input</key>
