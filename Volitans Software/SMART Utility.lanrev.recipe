@@ -2,19 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v1.0.1 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Autopkg recipe to add CrystalDiffract updates to Absolute Manage</string>
+	<string>Downloads the latest version of SMART Utility and copies it into your Absolute Manage Server.</string>
 	<key>Identifier</key>
-	<string>com.github.patgmac.absolute.ADPassMon</string>
+	<string>com.github.patgmac.lanrev.SMARTUtility</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>ADPassMon</string>
+		<string>SMART Utility</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.4.0</string>
+	<string>0.5.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.homebysix.pkg.ADPassMon</string>
+	<string>com.github.patgmac.pkg.SMARTUtility</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -30,9 +32,9 @@
 				<string>%pkg_path%</string>
 			</dict>
 			<key>Processor</key>
-			<string>com.github.tburgin.AbsoluteManageExport/AbsoluteManageExport</string>
+			<string>com.github.jbaker10.LANrevImporter/LANrevImporter</string>
 			<key>SharedProcessorRepoURL</key>
-			<string>https://github.com/tburgin/AbsoluteManageExport</string>
+			<string>https://github.com/jbaker10/LANrevImporter</string>
 		</dict>
 	</array>
 </dict>
