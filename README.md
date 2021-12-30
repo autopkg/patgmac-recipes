@@ -1,14 +1,5 @@
 ## patgmac-recipes
 
-```
-ALERT: AbsoluteManageExporter has become LANrevImporter. As part of this move, recipes have been duplicated with the LANrev name/identifier. 
-Going forward, please use the LANrev recipes, not Absolute. 
-The Absolute recipes will be removed at some point!!
-```
-
-See [Switching from AMExporter to LANrevImporter](https://github.com/jbaker10/LANrevImporter/wiki/Switching-from-AbsoluteManageExport-to-LANrevImporter).
-
-
 Recipes for [AutoPkg](http://autopkg.github.io/autopkg/). If you find these useful, please star this repo so I know others are using them.
 
 ## Dependencies
@@ -28,9 +19,9 @@ autopkg repo-add novaksam-recipes
 autopkg repo-add grahamgilbert-recipes
 ```
 
-For instructions on getting AutoPkg setup with LANrev, see:
+When using any Windows recipes, you will need to install `msitools`:
 ```
-https://github.com/jbaker10/LANrevImporter  
+brew install msitools 
  
 ```
 
