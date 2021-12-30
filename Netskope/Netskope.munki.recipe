@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Imports Netskope into munki.</string>
+	<key>Identifier</key>
+	<string>com.github.patgmac.munki.Netskope</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://%HOSTNAME%/dlr/mac/get</string>
+		<key>HOSTNAME</key>
+		<string>download-company.goskope.com</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Netskope</string>
+		<key>NAME</key>
+		<string>NSClient</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Netskope’s industry-leading cloud access security broker (CASB) solution enables you to quickly identify and manage the use of cloud applications, regardless of whether they are managed or unmanaged. Prevents sensitive data from being exfiltrated from your environment by risky insiders or malicious cybercriminals who have breached your perimeter.</string>
+			<key>developer</key>
+			<string>Netskope</string>
+			<key>display_name</key>
+			<string>Netskope Client</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.6.1</string>
+	<key>ParentRecipe</key>
+	<string>com.github.patgmac.download.Netskope</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_path</key>
+				<string>%pathname%</string>
+				<key>repo_subdirectory</key>
+				<string>%MUNKI_REPO_SUBDIR%</string>
+			</dict>
+			<key>Processor</key>
+			<string>MunkiImporter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
