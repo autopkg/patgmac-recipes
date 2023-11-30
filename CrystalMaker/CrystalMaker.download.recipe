@@ -16,10 +16,21 @@
 	<key>Process</key>
 	<array>
 		<dict>
+			<key>Processor</key>
+			<string>URLTextSearcher</string>
 			<key>Arguments</key>
 			<dict>
 				<key>url</key>
-				<string>http://www.crystalmaker.com/downloads/crystalmaker_mac.zip</string>
+				<string>https://crystalmaker.com/crystalmaker/download/index.html</string>
+				<key>re_pattern</key>
+				<string>crystalmaker.*?\.zip</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>url</key>
+				<string>https://crystalmaker.com/downloads/%match%</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
