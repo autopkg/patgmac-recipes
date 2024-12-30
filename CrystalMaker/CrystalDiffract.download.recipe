@@ -19,18 +19,37 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%.dmg</string>
+				<string>%NAME%.zip</string>
 				<key>url</key>
-				<string>http://www.crystalmaker.com/downloads/crystaldiffract_mac.dmg</string>
+				<string>https://crystalmaker.com/downloads/crystaldiffract7_mac.zip</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
 		</dict>
 		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>Unarchiver</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/CrystalDiffract.app</string>
+				<key>requirement</key>
+				<string>anchor apple generic and identifier "com.crystalmaker.crystaldiffract.v7" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = N6C85LN4R2)</string>
+			</dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+		</dict>
+		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>info_path</key>
-				<string>%pathname%/CrystalDiffract.app</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/CrystalDiffract.app/Contents/Info.plist</string>
 				<key>plist_keys</key>
 				<dict>
 					<key>CFBundleShortVersionString</key>
@@ -44,16 +63,12 @@
 			<key>Arguments</key>
 			<dict>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.dmg</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.zip</string>
 				<key>source_path</key>
 				<string>%pathname%</string>
 			</dict>
 			<key>Processor</key>
 			<string>Copier</string>
-		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>EndOfCheckPhase</string>
 		</dict>
 	</array>
 </dict>
