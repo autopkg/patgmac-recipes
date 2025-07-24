@@ -20,6 +20,10 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+			<key>warning_message</key>
+            <string>This recipe has been deprecated. See issue for further details: https://github.com/autopkg/grahamgilbert-recipes/issues/57
+
+New recipes can be found here: https://github.com/autopkg/dataJAR-recipes/tree/master/Outset</string>
 				<key>pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
 				<key>source_pkg</key>
