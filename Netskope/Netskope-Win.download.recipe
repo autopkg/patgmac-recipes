@@ -33,6 +33,10 @@
 			<string>URLDownloader</string>
 		</dict>
 		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>msi_path</key>
@@ -40,10 +44,6 @@
 			</dict>
 			<key>Processor</key>
 			<string>com.github.hansen-m.SharedProcessors/MSIInfoVersionProvider</string>
-		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>EndOfCheckPhase</string>
 		</dict>
 	</array>
 </dict>
