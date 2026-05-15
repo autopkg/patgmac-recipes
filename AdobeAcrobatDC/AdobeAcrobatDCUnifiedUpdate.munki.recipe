@@ -19,12 +19,14 @@ into Munki as an update for AdobeAcrobatDC (the unified full installer item).</s
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Productivity</string>
 			<key>description</key>
-			<string>Delta update for Adobe Acrobat DC (SCA/unified installer).</string>
+			<string>This update provides system requirement enhancements, mitigation for security issues, improved overall stability, bug fixes, and feature enhancements. For a list of specific bug fixes, new features, and other changes in this release, see the Release Notes.</string>
 			<key>developer</key>
 			<string>Adobe</string>
 			<key>display_name</key>
-			<string>Adobe Acrobat DC Unified Update</string>
+			<string>Adobe Acrobat DC Update</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
@@ -42,8 +44,6 @@ into Munki as an update for AdobeAcrobatDC (the unified full installer item).</s
 	<key>Process</key>
 	<array>
 		<dict>
-			<key>Processor</key>
-			<string>MunkiImporter</string>
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_path</key>
@@ -51,6 +51,8 @@ into Munki as an update for AdobeAcrobatDC (the unified full installer item).</s
 				<key>repo_subdirectory</key>
 				<string>%MUNKI_REPO_SUBDIR%</string>
 			</dict>
+			<key>Processor</key>
+			<string>MunkiImporter</string>
 		</dict>
 	</array>
 </dict>
