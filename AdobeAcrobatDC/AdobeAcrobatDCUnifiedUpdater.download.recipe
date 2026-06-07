@@ -75,8 +75,12 @@ the current release notes page.</string>
 			<dict>
 				<key>input_path</key>
 				<string>%RECIPE_CACHE_DIR%/AcrobatSCADCUpd%match%.pkg</string>
-				<key>requirement</key>
-				<string>anchor apple generic and certificate leaf[subject.OU] = "JQ525L2MZD"</string>
+				<key>expected_authority_names</key>
+				<array>
+					<string>Developer ID Installer: Adobe Inc. (JQ525L2MZD)</string>
+					<string>Developer ID Certification Authority</string>
+					<string>Apple Root CA</string>
+				</array>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
